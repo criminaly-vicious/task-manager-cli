@@ -32,7 +32,10 @@ while True:
 
     separar()
 
-    if entrada == "?" :
+    if entrada != "?" == True or int(entrada) < 1 or int(entrada) > 5:
+         print("comando invalido, tente novamente")
+
+    elif entrada == "?" :
         print("""
 
                         [1] adicionar tarefa
@@ -41,7 +44,7 @@ while True:
                         [4] deletar tarefas
                         [5] sair """)
 
-    if int(entrada) == 1:
+    elif int(entrada) == 1:
             nome = input("adicione uma tarefa: ")
     
     
@@ -59,12 +62,12 @@ while True:
     
             print(nome , "adicionado com sucesso" )
     
-    if int(entrada) == 2:
+    elif int(entrada) == 2:
         for item in tasks:
             separar()
             print(f'{item["id"]}. {item["nome"]} | {item["status"]}')
     
-    if int(entrada) == 3:
+    elif int(entrada) == 3:
         for item in tasks:
             separar()
             print(f'{item["id"]}. {item["nome"]} | {item["status"]}')
@@ -77,7 +80,7 @@ while True:
                         separar()
                         print("tarefa concluída com sucesso")
     
-    if int(entrada) == 4:
+    elif int(entrada) == 4:
         for item in tasks:
             separar()
             print(f'{item["id"]}. {item["nome"]} | {item["status"]}')
@@ -90,9 +93,6 @@ while True:
                 separar()
                 print("tarefa apagada com sucesso")
     
-    if int(entrada) == 5:
+    elif int(entrada) == 5:
         print("saindo do programa...")
         break
-
-    else:
-         print("comando invalido, tente novamente")

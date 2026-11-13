@@ -20,7 +20,7 @@ Dito e feito.
 
 Aqui está mais um Task Manager para aumentar a coleção de projetos que absolutamente ninguém pediu.
 
-**Mas pelo menos fui eu que escrevi.** E isso já é alguma coisa.
+**Mas pelo menos fui eu que escrevi.** E isso já é alguma coisa (meio que fodasse né).
 
 ## ⚙️ Features
 
